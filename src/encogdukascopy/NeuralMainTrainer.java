@@ -87,6 +87,17 @@ public class NeuralMainTrainer {
         LOGGER.info("Connecting...");
         //connect to the server using jnlp, user name and password
         //connection is needed for data downloading
+        //If we have args , it s the username and password... (else it's edit in code)..
+        if (args != null && args.length>0)
+        {
+            
+            LOGGER.info("found args: {0} {1}", args[0],args[1]);
+            
+            userName = args[0];
+            password = args[1];
+            
+        }
+        
         client.connect(jnlpUrl, userName, password);
 
         //wait for it to connect

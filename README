@@ -8,7 +8,15 @@ Install and run from command line this little sample which :
 
 Dependencies :
 
-Encog Framework 
-JForex API.
+Encog Framework :https://github.com/encog/encog-java-core.git
+JForex API : http://www.dukascopy.com/client/jforexlib/publicrepo/ 
+Quantisan's utils : https://github.com/Quantisan/JForex-Utilities
+
+you can run directly from the command line the compiled version in the downloads (for a quick example) by doing:
+java -jar EncogDukascopy.jar USERNAME PASSWORD 
+
+where username and password are you logins at dukascopy.
+
+
 
 Contact: fxmozart@gmail.com

@@ -18,6 +18,7 @@ import com.dukascopy.api.JFException;
 import com.dukascopy.api.OfferSide;
 import com.dukascopy.api.Period;
 import com.dukascopy.api.indicators.IIndicator;
+
 import com.quantisan.JFUtil.JForexAccount;
 import com.quantisan.JFUtil.JForexContext;
 import com.quantisan.JFUtil.Orderer;
