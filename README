@@ -18,5 +18,18 @@ java -jar EncogDukascopy.jar USERNAME PASSWORD
 where username and password are you logins at dukascopy.
 
 
+Compiled Jar's :
+
+Dukascopy :
+http://www.dukascopy.com/client/jforexlib/JForexClientLibrary.zip
+
+Quantisan's :
+https://github.com/downloads/fxmozart/DukasCopy-Encog/JFUtil.jar
+
+Encog :
+
+https://github.com/downloads/encog/encog-java-core/encog-core-3.0.1-release.zip
+
+
 
 Contact: fxmozart@gmail.com

@@ -50,6 +50,7 @@ public class NeuralMainTrainer {
     public static void main(String[] args) throws Exception {
         
         BasicConfigurator.configure();
+      
         //get the instance of the IClient interface
         final ITesterClient client = TesterFactory.getDefaultInstance();
         //set the listener that will receive system events
