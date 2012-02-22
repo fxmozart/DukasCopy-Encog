@@ -1,0 +1,14 @@
+Trading with dukascopy and Encog Neural framework:
+
+
+Install and run from command line this little sample which :
+
+-Downloads data
+-Analyses via Elman networks , and makes a quick training / evaluation.
+
+Dependencies :
+
+Encog Framework 
+JForex API.
+
+Contact: fxmozart@gmail.com

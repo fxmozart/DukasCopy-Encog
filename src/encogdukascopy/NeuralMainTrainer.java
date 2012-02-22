@@ -33,11 +33,15 @@ public class NeuralMainTrainer {
     //url of the DEMO jnlp
     private static String jnlpUrl = "https://www.dukascopy.com/client/demo/jclient/jforex.jnlp";
     //user name
-    private static String userName = "guiglionda1";
+    private static String userName = "UserName";
     //password
-    private static String password = "guiglionda";
+    private static String password = "UserPass";
 //No generics
 
+    
+    
+    
+    
     /**
      * 
      * @param args
