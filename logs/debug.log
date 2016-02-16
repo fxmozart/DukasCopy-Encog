@@ -1,0 +1,685 @@
+2016-02-16 11:22:57.865 INFO  singlejartest.Main - Connecting...
+2016-02-16 11:22:58.224 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 1 request [3978CF3E3C63A1F5CDF4DC7280F778E7426EE4F9]
+2016-02-16 11:23:02.308 ERROR com.dukascopy.api.impl.connect.AuthorizationClient - Unauthorized
+HttpServerResponse [response=Unauthorized, responseCode=401, headerFields={Transfer-Encoding=[chunked], null=[HTTP/1.1 401 Unauthorized], CF-RAY=[275889e3a0871055-CDG], Server=[cloudflare-nginx], Connection=[keep-alive], Pragma=[no-cache], Last-Modified=[Tue, 16 Feb 2016 10:23:42 GMT], StatusCode=[401], Date=[Tue, 16 Feb 2016 10:23:45 GMT], StatusMessage=[401: Auth failed], Cache-Control=[no-cache, must-revalidate, no-store, max-age=0], Set-Cookie=[__cfduid=d20661a5a6fcc520da9a76e906ecbe0581455618222; expires=Wed, 15-Feb-17 10:23:42 GMT; path=/; domain=.dukascopy.com; HttpOnly], Expires=[Thu, 01 Jan 1970 00:00:00 GMT], Content-Type=[text/html;charset=UTF-8]}]
+	at com.dukascopy.auth.client.http.HttpSRPClientProtocol.performStep1(HttpSRPClientProtocol.java:155)
+	at com.dukascopy.auth.client.SRPAuthClient.step1(SRPAuthClient.java:205)
+	at com.dukascopy.auth.client.SRPAuthClient.authenticate(SRPAuthClient.java:57)
+	at com.dukascopy.api.impl.connect.AuthorizationClient.getAPIsAndTicketUsingLogin_SRP6(AuthorizationClient.java:680)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.authenticateAPI(TesterClientImpl.java:492)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:272)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:263)
+	at singlejartest.TesterMain.main(TesterMain.java:102)
+2016-02-16 12:57:55.316 INFO  singlejartest.Main - Connecting...
+2016-02-16 12:57:55.731 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 1 request [3978CF3E3C63A1F5CDF4DC7280F778E7426EE4F9]
+2016-02-16 12:58:00.017 ERROR com.dukascopy.api.impl.connect.AuthorizationClient - Unauthorized
+HttpServerResponse [response=Unauthorized, responseCode=401, headerFields={Transfer-Encoding=[chunked], null=[HTTP/1.1 401 Unauthorized], CF-RAY=[275914fcf3ae3c71-CDG], Server=[cloudflare-nginx], Connection=[keep-alive], Pragma=[no-cache], Last-Modified=[Tue, 16 Feb 2016 11:58:40 GMT], StatusCode=[401], Date=[Tue, 16 Feb 2016 11:58:43 GMT], StatusMessage=[401: Auth failed], Cache-Control=[no-cache, must-revalidate, no-store, max-age=0], Set-Cookie=[__cfduid=dee7e1f71ba12f164faaa6622b5326eb21455623920; expires=Wed, 15-Feb-17 11:58:40 GMT; path=/; domain=.dukascopy.com; HttpOnly], Expires=[Thu, 01 Jan 1970 00:00:00 GMT], Content-Type=[text/html;charset=UTF-8]}]
+	at com.dukascopy.auth.client.http.HttpSRPClientProtocol.performStep1(HttpSRPClientProtocol.java:155)
+	at com.dukascopy.auth.client.SRPAuthClient.step1(SRPAuthClient.java:205)
+	at com.dukascopy.auth.client.SRPAuthClient.authenticate(SRPAuthClient.java:57)
+	at com.dukascopy.api.impl.connect.AuthorizationClient.getAPIsAndTicketUsingLogin_SRP6(AuthorizationClient.java:680)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.authenticateAPI(TesterClientImpl.java:492)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:272)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:263)
+	at singlejartest.TesterMain.main(TesterMain.java:102)
+2016-02-16 13:20:24.045 INFO  singlejartest.Main - Connecting...
+2016-02-16 13:20:24.353 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 1 request [CE24982DDE397003F0B6E8C438C4433346DDA174]
+2016-02-16 13:20:26.022 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 1 response [ServerResponseObject [passwordServerResponse=Step1ServerResponse [serverPublicValueB=7894d5fa66a4dab051aa0762879285a29a9cecc5ac81e55a21f42cd84117c4a91f5e609dd65b9c456ce1a9252181796290d118e2ed7683e4bd4605527b7505821f4ca72acab76bcc2efc6a1b43f9076ffe75fb7fe959cb033de34fbc18f88c6c2ca198ff87c150e90eaa6851b7f5a6f1acb2b799a6c95ff2ac93a6ec039ebfbf4e0ee00e652b92f33ddd18e5e41ae0e5fe7d3e26c7aa0806a35bcf5a792861810bf76c21c48c9cf78f85c4cf5f5545915fab44bbe0283503a9f970adf52f787e596835078e7f63ff959d7449b339c8e73d9fc87e4bfa860b06b22217fc3cdf3a943faed17cc2b91c7b04d7b03e82e59f554c797cf87d5d35e6615e9d4e8ec377, saltS=ab170940c9d2a9e19f36b035bdb1065, safePrimeN=ac6bdb41324a9a9bf166de5e1389582faf72b6651987ee07fc3192943db56050a37329cbb4a099ed8193e0757767a13dd52312ab4b03310dcd7f48a9da04fd50e8083969edb767b0cf6095179a163ab3661a05fbd5faaae82918a9962f0b93b855f97993ec975eeaa80d740adbf4ff747359d041d5c33ea71d281e446b14773bca97b43a23fb801676bd207a436c6481f1d2b9078717461a5b9d32e688f87748544523b524b0d57d5ea77a2775d2ecfa032cfbdbf52fb3786160279004e57ae6af874e7303ce53299ccc041c7bc308d82a5698f3a8d0c38271ae35f8e9dbfbb694b5c803d89f7ae435de236d525f54759b65e372fcd68ef20fa7111f9e4aff73, correspondingGeneratorG=2, hashAlgorithmH=SHA-256, srpProtocolVersion=1], pinServerResponse=null]]
+2016-02-16 13:20:26.153 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 2 request A [17481499098410925895011240551977876349478579209475900615901666015377704551460899989699213272126848908202776486316981101123541618811486537547401099519868683119150398585616174561351789085279475404692156865227941112880313908005687245577741027277607933523329783809903774247869441171318469853275430833109063350246378750471935220524061255575849126553946192687307718217924977314870322924089321310720120087680013340674590329080666190591453703387110608616336582877576774368945207519137733029669258786297930004985630635583647299185854341830147651739383157635836589047362795227398301048377543452739987594319895585232356491051707], M1 [105592147335941341627996327507809573824182917890015976942262809012052867470191]
+2016-02-16 13:20:27.375 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 2 response [ServerResponseObject [passwordServerResponse=Step2ServerResponse [serverEvidenceMessageM2=7b75e386290ba037482c3cc8d91f838b3bec909035e5b0f40ffad9cf865e50b5, srpProtocolVersion=1], pinServerResponse=null]]
+2016-02-16 13:20:27.377 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 3 request
+2016-02-16 13:20:28.737 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 3 response [ServerResponseObject [passwordServerResponse=Step3ServerResponse [serverResponse={"occasus":"rO0ABXNyABRqYXZhLnV0aWwuUHJvcGVydGllczkS0HpwNj6YAgABTAAIZGVmYXVsdHN0ABZMamF2\r\nYS91dGlsL1Byb3BlcnRpZX...","authApiURLs":["d-ja-gva-141-194.dukascopy.com:10443","d-ja-usa-e-97-4-b.dukascopy.com:10443","d-ja-sgn-04-a.dukascopy.com:10443","d-ja-jpn-102-100-c.dukascopy.com:10443","d-ja-hk-05.dukascopy.com:10443","d-ja-msk-10.dukascopy.com:10443"],"srp_versio":"1"}], pinServerResponse=null]]
+2016-02-16 13:20:28.822 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/JPY], using default - 1
+2016-02-16 13:20:28.881 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [NZD/CAD], using default - 1
+2016-02-16 13:20:28.881 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/CAD], using default - 1
+2016-02-16 13:20:28.881 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [HKG.IDX/HKD], using default - 1
+2016-02-16 13:20:28.882 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/DKK], using default - 1
+2016-02-16 13:20:28.883 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/DKK], using default - 1
+2016-02-16 13:20:28.883 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/HKD], using default - 1
+2016-02-16 13:20:28.883 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/HKD], using default - 1
+2016-02-16 13:20:28.884 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/CAD], using default - 1
+2016-02-16 13:20:28.884 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/ZAR], using default - 1
+2016-02-16 13:20:28.884 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/ZAR], using default - 1
+2016-02-16 13:20:28.885 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/NOK], using default - 1
+2016-02-16 13:20:28.885 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/NOK], using default - 1
+2016-02-16 13:20:28.885 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/HKD], using default - 1
+2016-02-16 13:20:28.886 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/HKD], using default - 1
+2016-02-16 13:20:28.886 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/AUD], using default - 1
+2016-02-16 13:20:28.886 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/DKK], using default - 1
+2016-02-16 13:20:28.887 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/DKK], using default - 1
+2016-02-16 13:20:28.887 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/CAD], using default - 1
+2016-02-16 13:20:28.888 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/CAD], using default - 1
+2016-02-16 13:20:28.888 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [SGD/JPY], using default - 1
+2016-02-16 13:20:28.888 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [SGD/JPY], using default - 1
+2016-02-16 13:20:28.889 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CAD/CHF], using default - 1
+2016-02-16 13:20:28.889 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CAD/CHF], using default - 1
+2016-02-16 13:20:28.889 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/TRY], using default - 1
+2016-02-16 13:20:28.889 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/TRY], using default - 1
+2016-02-16 13:20:28.890 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/TRY], using default - 1
+2016-02-16 13:20:28.890 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/TRY], using default - 1
+2016-02-16 13:20:28.890 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/AUD], using default - 1
+2016-02-16 13:20:28.891 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/SGD], using default - 1
+2016-02-16 13:20:28.891 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/SGD], using default - 1
+2016-02-16 13:20:28.891 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/CHF], using default - 1
+2016-02-16 13:20:28.892 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/NZD], using default - 1
+2016-02-16 13:20:28.892 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/NZD], using default - 1
+2016-02-16 13:20:28.892 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUS.IDX/EUR], using default - 1
+2016-02-16 13:20:28.893 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/SGD], using default - 1
+2016-02-16 13:20:28.893 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/SGD], using default - 1
+2016-02-16 13:20:28.894 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [XAU/USD], using default - 1
+2016-02-16 13:20:28.895 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/CHF], using default - 1
+2016-02-16 13:20:28.895 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/USD], using default - 1
+2016-02-16 13:20:28.896 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [NZD/JPY], using default - 1
+2016-02-16 13:20:28.896 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/JPY], using default - 1
+2016-02-16 13:20:28.897 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/MXN], using default - 1
+2016-02-16 13:20:28.897 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/MXN], using default - 1
+2016-02-16 13:20:28.898 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/SGD], using default - 1
+2016-02-16 13:20:28.898 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/SGD], using default - 1
+2016-02-16 13:20:28.898 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/NZD], using default - 1
+2016-02-16 13:20:28.898 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/NZD], using default - 1
+2016-02-16 13:20:28.899 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CAD/HKD], using default - 1
+2016-02-16 13:20:28.899 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CAD/HKD], using default - 1
+2016-02-16 13:20:28.899 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/CHF], using default - 1
+2016-02-16 13:20:28.900 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/USD], using default - 1
+2016-02-16 13:20:28.900 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/PLN], using default - 1
+2016-02-16 13:20:28.901 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/PLN], using default - 1
+2016-02-16 13:20:28.901 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/JPY], using default - 1
+2016-02-16 13:20:28.901 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/NZD], using default - 1
+2016-02-16 13:20:28.902 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CHF/JPY], using default - 1
+2016-02-16 13:20:28.902 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CHF/JPY], using default - 1
+2016-02-16 13:20:28.902 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/USD], using default - 1
+2016-02-16 13:20:28.903 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [ESP.IDX/EUR], using default - 1
+2016-02-16 13:20:28.903 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/USD], using default - 1
+2016-02-16 13:20:28.904 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/JPY], using default - 1
+2016-02-16 13:20:28.904 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/PLN], using default - 1
+2016-02-16 13:20:28.904 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/PLN], using default - 1
+2016-02-16 13:20:28.905 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/CHF], using default - 1
+2016-02-16 13:20:28.905 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/CHF], using default - 1
+2016-02-16 13:20:28.906 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [XAG/USD], using default - 1
+2016-02-16 13:20:28.906 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/GBP], using default - 1
+2016-02-16 13:20:28.907 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/RUB], using default - 1
+2016-02-16 13:20:28.907 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/JPY], using default - 1
+2016-02-16 13:20:28.908 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [NZD/CHF], using default - 1
+2016-02-16 13:20:28.908 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/CHF], using default - 1
+2016-02-16 13:20:28.908 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/NOK], using default - 1
+2016-02-16 13:20:28.909 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/NOK], using default - 1
+2016-02-16 13:20:28.909 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CAD/JPY], using default - 1
+2016-02-16 13:20:28.909 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CHF/SGD], using default - 1
+2016-02-16 13:20:28.909 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CHF/SGD], using default - 1
+2016-02-16 13:20:28.911 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [LIGHT.CMD/USD], using default - 1
+2016-02-16 13:20:28.911 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/CAD], using default - 1
+2016-02-16 13:20:28.912 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/CAD], using default - 1
+2016-02-16 13:20:28.912 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [HKD/JPY], using default - 1
+2016-02-16 13:20:28.912 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [HKD/JPY], using default - 1
+2016-02-16 13:20:28.912 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUS.IDX/AUD], using default - 1
+2016-02-16 13:20:28.913 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/SEK], using default - 1
+2016-02-16 13:20:28.913 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/SEK], using default - 1
+2016-02-16 13:20:28.913 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/SEK], using default - 1
+2016-02-16 13:20:28.914 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/SEK], using default - 1
+2016-02-16 13:20:28.914 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/CNH], using default - 1
+2016-02-16 13:20:28.914 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/CNH], using default - 1
+2016-02-16 13:20:28.917 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Selecting the best server...
+2016-02-16 13:20:30.741 WARN  com.dukascopy.charts.data.datacache.CacheManager - Cannot delete lock file [C:\Users\Mel\AppData\Local\JForex\.cache\lock0.lck]
+2016-02-16 13:20:30.791 WARN  com.dukascopy.charts.data.datacache.FeedDataProvider - JStore is disabled for the current user
+2016-02-16 13:20:30.812 INFO  com.dukascopy.charts.data.datacache.ccheck.MissingFileEntryManager - Starting to analyze all cache for mffolder.
+2016-02-16 13:20:30.819 INFO  com.dukascopy.charts.data.datacache.ccheck.MissingFileEntryManager - Finished all cache analization for mffolder! Duration [7] ms
+2016-02-16 13:20:31.479 INFO  com.dukascopy.dds4.transport.client.ClientProtocolHandler - TcpNoDelay=false
+2016-02-16 13:20:32.242 INFO  com.dukascopy.dds4.transport.client.ProtocolVersionClientNegotiatorFilter - Server: null responded with version: 4
+2016-02-16 13:20:32.244 INFO  com.dukascopy.dds4.transport.client.ClientConnector - Primary connect successfull, primarySession is [MinaIoSessionWrapper [session=(SOCKET, R: d-ja-gva-141-194.dukascopy.com/194.8.15.194:10443, L: /192.168.43.238:53329, S: d-ja-gva-141-194.dukascopy.com/194.8.15.194:10443)]], address is [d-ja-gva-141-194.dukascopy.com/194.8.15.194:10443]
+2016-02-16 13:20:32.458 INFO  com.dukascopy.dds2.greed.connection.GreedClientAuthorizationProvider - !!!:Thread[ClientConnector,5,main]
+2016-02-16 13:20:32.461 INFO  com.dukascopy.dds4.transport.client.ClientConnector - Child socket connection could be accepted now by server [<ChildSocketAuthAcceptorMessage(parentSessionId=69f925cf-84bc-43b9-a0d4-987449b6ff9d,timestamp=1455625275877)>], transport client [null, d-ja-gva-141-194.dukascopy.com/194.8.15.194:10443]
+2016-02-16 13:20:32.855 WARN  com.dukascopy.api.impl.connect.WLabelData - White Label Image is not received
+2016-02-16 13:20:32.857 INFO  singlejartest.Main - Connected
+2016-02-16 13:20:32.857 INFO  singlejartest.Main - Subscribing instruments...
+2016-02-16 13:20:34.143 INFO  com.dukascopy.dds4.transport.client.ProtocolVersionClientNegotiatorFilter - Server: null responded with version: 4
+2016-02-16 13:20:34.143 INFO  com.dukascopy.dds4.transport.client.ClientConnector - Child session opened for [d-ja-gva-141-194.dukascopy.com/194.8.15.194:10443], sending [<ChildSocketAuthAcceptorMessage(parentSessionId=69f925cf-84bc-43b9-a0d4-987449b6ff9d,timestamp=1455625275877)>], successful consequent attempt [1]
+2016-02-16 13:20:35.973 INFO  singlejartest.Main - Downloading data
+2016-02-16 13:20:39.136 INFO  singlejartest.Main - Starting strategy
+2016-02-16 13:20:39.222 INFO  singlejartest.Main - Strategy started: 1
+2016-02-16 13:20:39.223 INFO  singlejartest.Main - Getting prices before start time
+2016-02-16 13:20:39.521 INFO  singlejartest.Main - Creating data loading threads
+2016-02-16 13:20:39.632 INFO  singlejartest.Main - Getting prices before start time
+2016-02-16 13:20:39.708 WARN  com.dukascopy.api.impl.connect.WLabelData - White Label Image is not received
+2016-02-16 13:20:39.728 INFO  singlejartest.Main - Filling in-progress candles
+2016-02-16 13:20:40.722 INFO  singlejartest.Main - Executing onStart
+2016-02-16 13:20:45.568 INFO  singlejartest.Main - Running
+2016-02-16 13:20:46.182 INFO  singlejartest.Main - Running, Sat 2016.02.13 00:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.207 INFO  singlejartest.Main - Running, Sat 2016.02.13 01:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.229 INFO  singlejartest.Main - Running, Sat 2016.02.13 01:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.248 INFO  singlejartest.Main - Running, Sat 2016.02.13 02:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.263 INFO  singlejartest.Main - Running, Sat 2016.02.13 02:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.279 INFO  singlejartest.Main - Running, Sat 2016.02.13 03:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.293 INFO  singlejartest.Main - Running, Sat 2016.02.13 03:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.308 INFO  singlejartest.Main - Running, Sat 2016.02.13 04:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.319 INFO  singlejartest.Main - Running, Sat 2016.02.13 04:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.333 INFO  singlejartest.Main - Running, Sat 2016.02.13 05:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.348 INFO  singlejartest.Main - Running, Sat 2016.02.13 05:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.356 INFO  singlejartest.Main - Running, Sat 2016.02.13 06:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.362 INFO  singlejartest.Main - Running, Sat 2016.02.13 06:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.368 INFO  singlejartest.Main - Running, Sat 2016.02.13 07:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.373 INFO  singlejartest.Main - Running, Sat 2016.02.13 07:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.379 INFO  singlejartest.Main - Running, Sat 2016.02.13 08:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.384 INFO  singlejartest.Main - Running, Sat 2016.02.13 08:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.391 INFO  singlejartest.Main - Running, Sat 2016.02.13 09:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.399 INFO  singlejartest.Main - Running, Sat 2016.02.13 09:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.408 INFO  singlejartest.Main - Running, Sat 2016.02.13 10:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.417 INFO  singlejartest.Main - Running, Sat 2016.02.13 10:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.429 INFO  singlejartest.Main - Running, Sat 2016.02.13 11:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.443 INFO  singlejartest.Main - Running, Sat 2016.02.13 11:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.463 INFO  singlejartest.Main - Running, Sat 2016.02.13 12:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.472 INFO  singlejartest.Main - Running, Sat 2016.02.13 12:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.481 INFO  singlejartest.Main - Running, Sat 2016.02.13 13:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.490 INFO  singlejartest.Main - Running, Sat 2016.02.13 13:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.499 INFO  singlejartest.Main - Running, Sat 2016.02.13 14:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.507 INFO  singlejartest.Main - Running, Sat 2016.02.13 14:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.516 INFO  singlejartest.Main - Running, Sat 2016.02.13 15:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.522 INFO  singlejartest.Main - Running, Sat 2016.02.13 15:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.529 INFO  singlejartest.Main - Running, Sat 2016.02.13 16:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.534 INFO  singlejartest.Main - Running, Sat 2016.02.13 16:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.540 INFO  singlejartest.Main - Running, Sat 2016.02.13 17:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.547 INFO  singlejartest.Main - Running, Sat 2016.02.13 17:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.554 INFO  singlejartest.Main - Running, Sat 2016.02.13 18:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.562 INFO  singlejartest.Main - Running, Sat 2016.02.13 18:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.570 INFO  singlejartest.Main - Running, Sat 2016.02.13 19:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.574 INFO  singlejartest.Main - Running, Sat 2016.02.13 19:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.580 INFO  singlejartest.Main - Running, Sat 2016.02.13 20:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.587 INFO  singlejartest.Main - Running, Sat 2016.02.13 20:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.595 INFO  singlejartest.Main - Running, Sat 2016.02.13 21:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.603 INFO  singlejartest.Main - Running, Sat 2016.02.13 21:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.612 INFO  singlejartest.Main - Running, Sat 2016.02.13 22:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.619 INFO  singlejartest.Main - Running, Sat 2016.02.13 22:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.627 INFO  singlejartest.Main - Running, Sun 2016.02.13 23:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.635 INFO  singlejartest.Main - Running, Sun 2016.02.13 23:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.643 INFO  singlejartest.Main - Running, Sun 2016.02.14 00:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.650 INFO  singlejartest.Main - Running, Sun 2016.02.14 00:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.657 INFO  singlejartest.Main - Running, Sun 2016.02.14 01:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.664 INFO  singlejartest.Main - Running, Sun 2016.02.14 01:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.671 INFO  singlejartest.Main - Running, Sun 2016.02.14 02:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.676 INFO  singlejartest.Main - Running, Sun 2016.02.14 02:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.682 INFO  singlejartest.Main - Running, Sun 2016.02.14 03:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.686 INFO  singlejartest.Main - Running, Sun 2016.02.14 03:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.693 INFO  singlejartest.Main - Running, Sun 2016.02.14 04:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.699 INFO  singlejartest.Main - Running, Sun 2016.02.14 04:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.706 INFO  singlejartest.Main - Running, Sun 2016.02.14 05:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.712 INFO  singlejartest.Main - Running, Sun 2016.02.14 05:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.718 INFO  singlejartest.Main - Running, Sun 2016.02.14 06:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.725 INFO  singlejartest.Main - Running, Sun 2016.02.14 06:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.730 INFO  singlejartest.Main - Running, Sun 2016.02.14 07:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.736 INFO  singlejartest.Main - Running, Sun 2016.02.14 07:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.741 INFO  singlejartest.Main - Running, Sun 2016.02.14 08:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.748 INFO  singlejartest.Main - Running, Sun 2016.02.14 08:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.760 INFO  singlejartest.Main - Running, Sun 2016.02.14 09:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.766 INFO  singlejartest.Main - Running, Sun 2016.02.14 09:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.775 INFO  singlejartest.Main - Running, Sun 2016.02.14 10:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.780 INFO  singlejartest.Main - Running, Sun 2016.02.14 10:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.784 INFO  singlejartest.Main - Running, Sun 2016.02.14 11:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.789 INFO  singlejartest.Main - Running, Sun 2016.02.14 11:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.794 INFO  singlejartest.Main - Running, Sun 2016.02.14 12:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.799 INFO  singlejartest.Main - Running, Sun 2016.02.14 12:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.805 INFO  singlejartest.Main - Running, Sun 2016.02.14 13:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.810 INFO  singlejartest.Main - Running, Sun 2016.02.14 13:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.815 INFO  singlejartest.Main - Running, Sun 2016.02.14 14:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.822 INFO  singlejartest.Main - Running, Sun 2016.02.14 14:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.826 INFO  singlejartest.Main - Running, Sun 2016.02.14 15:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.830 INFO  singlejartest.Main - Running, Sun 2016.02.14 15:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.836 INFO  singlejartest.Main - Running, Sun 2016.02.14 16:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.841 INFO  singlejartest.Main - Running, Sun 2016.02.14 16:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.847 INFO  singlejartest.Main - Running, Sun 2016.02.14 17:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.852 INFO  singlejartest.Main - Running, Sun 2016.02.14 17:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.858 INFO  singlejartest.Main - Running, Sun 2016.02.14 18:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.864 INFO  singlejartest.Main - Running, Sun 2016.02.14 18:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.869 INFO  singlejartest.Main - Running, Sun 2016.02.14 19:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.875 INFO  singlejartest.Main - Running, Sun 2016.02.14 19:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.881 INFO  singlejartest.Main - Running, Sun 2016.02.14 20:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.886 INFO  singlejartest.Main - Running, Sun 2016.02.14 20:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.893 INFO  singlejartest.Main - Running, Sun 2016.02.14 21:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.898 INFO  singlejartest.Main - Running, Sun 2016.02.14 21:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:46.908 INFO  singlejartest.Main - Running, Sun 2016.02.14 22:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:47.029 INFO  singlejartest.Main - Running, Sun 2016.02.14 22:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:47.162 INFO  singlejartest.Main - Running, Mon 2016.02.14 23:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:47.353 INFO  singlejartest.Main - Running, Mon 2016.02.14 23:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:47.423 INFO  singlejartest.Main - Running, Mon 2016.02.15 00:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:47.585 INFO  singlejartest.Main - Running, Mon 2016.02.15 00:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:47.723 INFO  singlejartest.Main - Running, Mon 2016.02.15 01:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:47.862 INFO  singlejartest.Main - Running, Mon 2016.02.15 01:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:47.971 INFO  singlejartest.Main - Running, Mon 2016.02.15 02:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:48.076 INFO  singlejartest.Main - Running, Mon 2016.02.15 02:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:48.150 INFO  singlejartest.Main - Running, Mon 2016.02.15 03:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:48.227 INFO  singlejartest.Main - Running, Mon 2016.02.15 03:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:48.311 INFO  singlejartest.Main - Running, Mon 2016.02.15 04:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:48.394 INFO  singlejartest.Main - Running, Mon 2016.02.15 04:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:48.477 INFO  singlejartest.Main - Running, Mon 2016.02.15 05:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:48.592 INFO  singlejartest.Main - Running, Mon 2016.02.15 05:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:48.689 INFO  singlejartest.Main - Running, Mon 2016.02.15 06:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:48.814 INFO  singlejartest.Main - Running, Mon 2016.02.15 06:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:48.881 INFO  singlejartest.Main - Running, Mon 2016.02.15 07:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:49.027 INFO  singlejartest.Main - Running, Mon 2016.02.15 07:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:49.119 INFO  singlejartest.Main - Running, Mon 2016.02.15 08:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:49.261 INFO  singlejartest.Main - Running, Mon 2016.02.15 08:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:49.351 INFO  singlejartest.Main - Running, Mon 2016.02.15 09:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:49.442 INFO  singlejartest.Main - Running, Mon 2016.02.15 09:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:49.552 INFO  singlejartest.Main - Running, Mon 2016.02.15 10:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:49.646 INFO  singlejartest.Main - Running, Mon 2016.02.15 10:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:49.705 INFO  singlejartest.Main - Running, Mon 2016.02.15 11:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:49.789 INFO  singlejartest.Main - Running, Mon 2016.02.15 11:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:49.841 INFO  singlejartest.Main - Running, Mon 2016.02.15 12:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:49.931 INFO  singlejartest.Main - Running, Mon 2016.02.15 12:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.030 INFO  singlejartest.Main - Running, Mon 2016.02.15 13:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.140 INFO  singlejartest.Main - Running, Mon 2016.02.15 13:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.222 INFO  singlejartest.Main - Running, Mon 2016.02.15 14:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.307 INFO  singlejartest.Main - Running, Mon 2016.02.15 14:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.468 INFO  singlejartest.Main - Running, Mon 2016.02.15 15:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.585 INFO  singlejartest.Main - Running, Mon 2016.02.15 15:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.649 INFO  singlejartest.Main - Running, Mon 2016.02.15 16:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.714 INFO  singlejartest.Main - Running, Mon 2016.02.15 16:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.751 INFO  singlejartest.Main - Running, Mon 2016.02.15 17:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.803 INFO  singlejartest.Main - Running, Mon 2016.02.15 17:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.845 INFO  singlejartest.Main - Running, Mon 2016.02.15 18:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.891 INFO  singlejartest.Main - Running, Mon 2016.02.15 18:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:50.936 INFO  singlejartest.Main - Running, Mon 2016.02.15 19:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:51.003 INFO  singlejartest.Main - Running, Mon 2016.02.15 19:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:51.047 INFO  singlejartest.Main - Running, Mon 2016.02.15 20:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:51.092 INFO  singlejartest.Main - Running, Mon 2016.02.15 20:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:51.129 INFO  singlejartest.Main - Running, Mon 2016.02.15 21:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:51.179 INFO  singlejartest.Main - Running, Mon 2016.02.15 21:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:51.222 INFO  singlejartest.Main - Running, Mon 2016.02.15 22:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:51.237 INFO  singlejartest.Main - Running, Mon 2016.02.15 22:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:51.304 INFO  singlejartest.Main - Running, Tue 2016.02.15 23:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:51.351 INFO  singlejartest.Main - Running, Tue 2016.02.15 23:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:20:51.403 INFO  singlejartest.Main - Executing onStop
+2016-02-16 13:20:51.429 INFO  singlejartest.Main - Strategy stopped: 1
+2016-02-16 13:20:51.431 ERROR singlejartest.Main - C:\report.html (Accès refusé)
+java.io.FileNotFoundException: C:\report.html (Accès refusé)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.createReport(TesterClientImpl.java:1586)
+	at singlejartest.TesterMain$1.onStop(TesterMain.java:79)
+	at com.dukascopy.api.impl.connect.TesterClientImpl$4.onStop(TesterClientImpl.java:636)
+	at com.dukascopy.api.impl.connect.TesterClientImpl$TesterLoadingProgressListener.loadingFinished(TesterClientImpl.java:1824)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.StrategyRunner.run(StrategyRunner.java:487)
+	at java.lang.Thread.run(Thread.java:745)
+2016-02-16 13:32:52.977 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 1 request [CE24982DDE397003F0B6E8C438C4433346DDA174]
+2016-02-16 13:32:54.727 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 1 response [ServerResponseObject [passwordServerResponse=Step1ServerResponse [serverPublicValueB=5d6b739ed372aa14e39bcfda4d8e487d745f8c71b993b43cd6a2f1f67bb0e8fa88b1ceef6ec7dcf1f64ab1943a216982e9deca62d2fcd68405ce650cc911655c540df0b2b46d49740fccebe3b1564b6f55a38bc70db609430bcab91d5704828383b0d42cb659567fd4e990012636225f31a18355f60ac125984bac4c9c02975cac372bb123ebf566a22f3f3281d445755a864f681a35f26a3dca0ac849659fa9003965e6c6cd22c2de0a631a10de648204894cb4af18a3e4e636c614fd19da6e2d5d18facc4bc513a2c54be7ba6452c94963a6df269b2b14a533dd0d798ad58a23729f02a0e17e8f13cacc059ee20ae4c6326591b379c38d81668002f975d62, saltS=5c99263e24f0fee151887ff5b6e27bb4, safePrimeN=ac6bdb41324a9a9bf166de5e1389582faf72b6651987ee07fc3192943db56050a37329cbb4a099ed8193e0757767a13dd52312ab4b03310dcd7f48a9da04fd50e8083969edb767b0cf6095179a163ab3661a05fbd5faaae82918a9962f0b93b855f97993ec975eeaa80d740adbf4ff747359d041d5c33ea71d281e446b14773bca97b43a23fb801676bd207a436c6481f1d2b9078717461a5b9d32e688f87748544523b524b0d57d5ea77a2775d2ecfa032cfbdbf52fb3786160279004e57ae6af874e7303ce53299ccc041c7bc308d82a5698f3a8d0c38271ae35f8e9dbfbb694b5c803d89f7ae435de236d525f54759b65e372fcd68ef20fa7111f9e4aff73, correspondingGeneratorG=2, hashAlgorithmH=SHA-256, srpProtocolVersion=1], pinServerResponse=null]]
+2016-02-16 13:32:54.851 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 2 request A [20258866067528630783745325552918457174217196825120785379097444136203342822985325677933064714588035206983049539345514404267057539717397108739748309884390155371520493659582495054004694048122985276931552446470056006715798312535791806568549377128442481028145271331794917288888183619399036507882794050396767947984720464352885318344954749664734444705951843395994541507208941804819198679501006040766180167212485727563337331095608714866736319921383776828152213032888132948247393325665638970862474141451991098568131891379262599642941707741926681857772801545212196376195670655113268545572994917544912105006962104207658816260442], M1 [81984949908849215397702546156468032321247408192276018754186994385581353168207]
+2016-02-16 13:32:56.001 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 2 response [ServerResponseObject [passwordServerResponse=Step2ServerResponse [serverEvidenceMessageM2=3d661b73e9b3cee41176d46c1f4ad8a553d47f514d5c329cd33c2145066b80b8, srpProtocolVersion=1], pinServerResponse=null]]
+2016-02-16 13:32:56.003 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 3 request
+2016-02-16 13:32:57.225 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 3 response [ServerResponseObject [passwordServerResponse=Step3ServerResponse [serverResponse={"occasus":"rO0ABXNyABRqYXZhLnV0aWwuUHJvcGVydGllczkS0HpwNj6YAgABTAAIZGVmYXVsdHN0ABZMamF2\r\nYS91dGlsL1Byb3BlcnRpZX...","authApiURLs":["d-ja-gva-101-133-167.dukascopy.com:10443","d-ja-usa-e-96-4-a.dukascopy.com:10443","d-ja-sgn-04-a.dukascopy.com:10443","d-ja-jpn-04-a.dukascopy.com:10443","d-ja-hk-04.dukascopy.com:10443","d-ja-msk-10.dukascopy.com:10443"],"srp_versio":"1"}], pinServerResponse=null]]
+2016-02-16 13:32:57.311 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/JPY], using default - 1
+2016-02-16 13:32:57.334 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [NZD/CAD], using default - 1
+2016-02-16 13:32:57.334 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/CAD], using default - 1
+2016-02-16 13:32:57.335 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [HKG.IDX/HKD], using default - 1
+2016-02-16 13:32:57.336 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/DKK], using default - 1
+2016-02-16 13:32:57.336 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/DKK], using default - 1
+2016-02-16 13:32:57.336 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/HKD], using default - 1
+2016-02-16 13:32:57.337 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/HKD], using default - 1
+2016-02-16 13:32:57.337 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/CAD], using default - 1
+2016-02-16 13:32:57.337 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/ZAR], using default - 1
+2016-02-16 13:32:57.339 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/ZAR], using default - 1
+2016-02-16 13:32:57.339 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/NOK], using default - 1
+2016-02-16 13:32:57.340 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/NOK], using default - 1
+2016-02-16 13:32:57.340 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/HKD], using default - 1
+2016-02-16 13:32:57.340 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/HKD], using default - 1
+2016-02-16 13:32:57.341 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/AUD], using default - 1
+2016-02-16 13:32:57.341 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/DKK], using default - 1
+2016-02-16 13:32:57.341 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/DKK], using default - 1
+2016-02-16 13:32:57.342 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/CAD], using default - 1
+2016-02-16 13:32:57.342 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/CAD], using default - 1
+2016-02-16 13:32:57.342 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [SGD/JPY], using default - 1
+2016-02-16 13:32:57.343 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [SGD/JPY], using default - 1
+2016-02-16 13:32:57.343 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CAD/CHF], using default - 1
+2016-02-16 13:32:57.343 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CAD/CHF], using default - 1
+2016-02-16 13:32:57.344 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/TRY], using default - 1
+2016-02-16 13:32:57.344 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/TRY], using default - 1
+2016-02-16 13:32:57.344 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/TRY], using default - 1
+2016-02-16 13:32:57.345 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/TRY], using default - 1
+2016-02-16 13:32:57.345 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/AUD], using default - 1
+2016-02-16 13:32:57.345 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/SGD], using default - 1
+2016-02-16 13:32:57.346 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/SGD], using default - 1
+2016-02-16 13:32:57.346 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/CHF], using default - 1
+2016-02-16 13:32:57.346 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/NZD], using default - 1
+2016-02-16 13:32:57.347 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/NZD], using default - 1
+2016-02-16 13:32:57.347 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUS.IDX/EUR], using default - 1
+2016-02-16 13:32:57.348 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/SGD], using default - 1
+2016-02-16 13:32:57.348 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/SGD], using default - 1
+2016-02-16 13:32:57.348 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [XAU/USD], using default - 1
+2016-02-16 13:32:57.349 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/CHF], using default - 1
+2016-02-16 13:32:57.349 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/USD], using default - 1
+2016-02-16 13:32:57.349 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [NZD/JPY], using default - 1
+2016-02-16 13:32:57.350 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/JPY], using default - 1
+2016-02-16 13:32:57.350 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/MXN], using default - 1
+2016-02-16 13:32:57.350 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/MXN], using default - 1
+2016-02-16 13:32:57.351 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/SGD], using default - 1
+2016-02-16 13:32:57.351 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/SGD], using default - 1
+2016-02-16 13:32:57.351 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/NZD], using default - 1
+2016-02-16 13:32:57.352 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/NZD], using default - 1
+2016-02-16 13:32:57.352 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CAD/HKD], using default - 1
+2016-02-16 13:32:57.352 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CAD/HKD], using default - 1
+2016-02-16 13:32:57.352 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/CHF], using default - 1
+2016-02-16 13:32:57.353 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/USD], using default - 1
+2016-02-16 13:32:57.353 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/PLN], using default - 1
+2016-02-16 13:32:57.354 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/PLN], using default - 1
+2016-02-16 13:32:57.354 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/JPY], using default - 1
+2016-02-16 13:32:57.354 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/NZD], using default - 1
+2016-02-16 13:32:57.355 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CHF/JPY], using default - 1
+2016-02-16 13:32:57.355 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CHF/JPY], using default - 1
+2016-02-16 13:32:57.356 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/USD], using default - 1
+2016-02-16 13:32:57.356 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [ESP.IDX/EUR], using default - 1
+2016-02-16 13:32:57.357 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/USD], using default - 1
+2016-02-16 13:32:57.357 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/JPY], using default - 1
+2016-02-16 13:32:57.357 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/PLN], using default - 1
+2016-02-16 13:32:57.357 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/PLN], using default - 1
+2016-02-16 13:32:57.358 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/CHF], using default - 1
+2016-02-16 13:32:57.358 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/CHF], using default - 1
+2016-02-16 13:32:57.358 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [XAG/USD], using default - 1
+2016-02-16 13:32:57.359 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/GBP], using default - 1
+2016-02-16 13:32:57.359 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/RUB], using default - 1
+2016-02-16 13:32:57.359 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/JPY], using default - 1
+2016-02-16 13:32:57.360 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [NZD/CHF], using default - 1
+2016-02-16 13:32:57.360 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/CHF], using default - 1
+2016-02-16 13:32:57.360 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/NOK], using default - 1
+2016-02-16 13:32:57.360 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/NOK], using default - 1
+2016-02-16 13:32:57.361 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CAD/JPY], using default - 1
+2016-02-16 13:32:57.361 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CHF/SGD], using default - 1
+2016-02-16 13:32:57.361 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CHF/SGD], using default - 1
+2016-02-16 13:32:57.362 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [LIGHT.CMD/USD], using default - 1
+2016-02-16 13:32:57.362 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/CAD], using default - 1
+2016-02-16 13:32:57.362 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/CAD], using default - 1
+2016-02-16 13:32:57.363 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [HKD/JPY], using default - 1
+2016-02-16 13:32:57.363 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [HKD/JPY], using default - 1
+2016-02-16 13:32:57.363 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUS.IDX/AUD], using default - 1
+2016-02-16 13:32:57.364 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/SEK], using default - 1
+2016-02-16 13:32:57.364 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/SEK], using default - 1
+2016-02-16 13:32:57.365 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/SEK], using default - 1
+2016-02-16 13:32:57.365 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/SEK], using default - 1
+2016-02-16 13:32:57.366 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/CNH], using default - 1
+2016-02-16 13:32:57.366 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/CNH], using default - 1
+2016-02-16 13:32:57.390 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Selecting the best server...
+2016-02-16 13:32:58.766 INFO  com.dukascopy.dds4.transport.client.ClientProtocolHandler - TcpNoDelay=false
+2016-02-16 13:33:00.180 WARN  com.dukascopy.api.impl.connect.WLabelData - White Label Image is not received
+2016-02-16 13:33:00.426 INFO  com.dukascopy.dds4.transport.client.ProtocolVersionClientNegotiatorFilter - Server: DDS2 Standalone Transport Client responded with version: 4
+2016-02-16 13:33:00.428 INFO  com.dukascopy.dds4.transport.client.ClientConnector - Primary connect successfull, primarySession is [MinaIoSessionWrapper [session=(SOCKET, R: d-ja-gva-101-133-167.dukascopy.com/194.8.15.167:10443, L: /192.168.43.238:53470, S: d-ja-gva-101-133-167.dukascopy.com/194.8.15.167:10443)]], address is [d-ja-gva-101-133-167.dukascopy.com/194.8.15.167:10443]
+2016-02-16 13:33:00.658 INFO  com.dukascopy.dds2.greed.connection.GreedClientAuthorizationProvider - !!!:Thread[(DDS2 Standalone Transport Client) ClientConnector,5,main]
+2016-02-16 13:33:00.661 INFO  com.dukascopy.dds4.transport.client.ClientConnector - Child socket connection could be accepted now by server [<ChildSocketAuthAcceptorMessage(parentSessionId=cfa2e728-13d1-4b12-8a18-a43b3a008f98,timestamp=1455626024076)>], transport client [DDS2 Standalone Transport Client, d-ja-gva-101-133-167.dukascopy.com/194.8.15.167:10443]
+2016-02-16 13:33:00.667 ERROR com.dukascopy.dds2.greed.market.LiveCurrencyMarketProcessingThread - Cannot create the liveCurrencyMarketWatcherThread, the properties is null.
+2016-02-16 13:33:01.504 INFO  com.dukascopy.api.impl.connect.DCClientImpl - Connected
+2016-02-16 13:33:02.215 INFO  com.dukascopy.dds4.transport.client.ProtocolVersionClientNegotiatorFilter - Server: DDS2 Standalone Transport Client responded with version: 4
+2016-02-16 13:33:02.216 INFO  com.dukascopy.dds4.transport.client.ClientConnector - Child session opened for [d-ja-gva-101-133-167.dukascopy.com/194.8.15.167:10443], sending [<ChildSocketAuthAcceptorMessage(parentSessionId=cfa2e728-13d1-4b12-8a18-a43b3a008f98,timestamp=1455626024076)>], successful consequent attempt [1]
+2016-02-16 13:33:06.175 INFO  com.dukascopy.api.impl.connect.DCClientImpl - Strategy started: 64
+2016-02-16 13:33:36.302 INFO  com.dukascopy.api.impl.connect.DCClientImpl - Strategy stopped: 64
+2016-02-16 13:40:10.465 INFO  singlejartest.Main - Connecting...
+2016-02-16 13:40:10.813 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 1 request [CE24982DDE397003F0B6E8C438C4433346DDA174]
+2016-02-16 13:40:12.468 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 1 response [ServerResponseObject [passwordServerResponse=Step1ServerResponse [serverPublicValueB=6d171ff47576ea7f50025d74385d159207d22ce0fe30a0ce5641303a039671f8389acd996defa8eb59e6f4381e8846f7c0381995a2e061f0dd1e8e1dff9410e1b3f2d5b98de43b386053ba01683090873076b243ed565843a98402530742eab72e49c852a89676ce0a23baddb986e2b800d081b43adc89530b4b001448fdf3539d0f2a2e259e88a47a5d1a5f470707600b3fc6256dee452846e0af2cf22f245b13dac7053cd091c8cbdc4607452fd85656a9999ab9c65ce98c99c4d729bbb7cca04b3adda3171d3e753d4d618f06e74d9da296075c6100a96192b110b96862659e18eea74fc9a569eca92a09d3269d84d541f5cbeacbe4359ead16562d0f226b, saltS=5d9f525255475a8b956b3b24847e698f, safePrimeN=ac6bdb41324a9a9bf166de5e1389582faf72b6651987ee07fc3192943db56050a37329cbb4a099ed8193e0757767a13dd52312ab4b03310dcd7f48a9da04fd50e8083969edb767b0cf6095179a163ab3661a05fbd5faaae82918a9962f0b93b855f97993ec975eeaa80d740adbf4ff747359d041d5c33ea71d281e446b14773bca97b43a23fb801676bd207a436c6481f1d2b9078717461a5b9d32e688f87748544523b524b0d57d5ea77a2775d2ecfa032cfbdbf52fb3786160279004e57ae6af874e7303ce53299ccc041c7bc308d82a5698f3a8d0c38271ae35f8e9dbfbb694b5c803d89f7ae435de236d525f54759b65e372fcd68ef20fa7111f9e4aff73, correspondingGeneratorG=2, hashAlgorithmH=SHA-256, srpProtocolVersion=1], pinServerResponse=null]]
+2016-02-16 13:40:12.585 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 2 request A [18780667581504235565711568138499411003340188576826592633688558833889449546762105809293314929463021717258511412918399232148520738250745056595649477705129402796645195781720657837341825355854261736040196468870516391729845970042195457488229843443757869127434496623288815048042294819075049790920553125974222082935389233856279160651693953217646405089243583323942396444892981129484734578834035973952979832853599257401797354422219190020524491533981684541166983292665335721866212669126971659336373540498360037098437470668383402560874292747964734489974921458327571388419491174627877611478785986279882504165594225263667144803640], M1 [17560928806724576394096722636458726040472873474514739125911915289600979101078]
+2016-02-16 13:40:13.560 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 2 response [ServerResponseObject [passwordServerResponse=Step2ServerResponse [serverEvidenceMessageM2=a9bb03291a076592a25502c40484c425a6bf332496199bed9e84e20c3d744d21, srpProtocolVersion=1], pinServerResponse=null]]
+2016-02-16 13:40:13.562 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 3 request
+2016-02-16 13:40:15.013 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Auth step 3 response [ServerResponseObject [passwordServerResponse=Step3ServerResponse [serverResponse={"occasus":"rO0ABXNyABRqYXZhLnV0aWwuUHJvcGVydGllczkS0HpwNj6YAgABTAAIZGVmYXVsdHN0ABZMamF2\r\nYS91dGlsL1Byb3BlcnRpZX...","authApiURLs":["d-ja-gva-101-133-167.dukascopy.com:10443","d-ja-usa-e-96-4-a.dukascopy.com:10443","d-ja-sgn-04-a.dukascopy.com:10443","d-ja-jpn-04-a.dukascopy.com:10443","d-ja-hk-05.dukascopy.com:10443","d-ja-msk-10.dukascopy.com:10443"],"srp_versio":"1"}], pinServerResponse=null]]
+2016-02-16 13:40:15.094 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/JPY], using default - 1
+2016-02-16 13:40:15.098 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [NZD/CAD], using default - 1
+2016-02-16 13:40:15.098 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/CAD], using default - 1
+2016-02-16 13:40:15.098 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [HKG.IDX/HKD], using default - 1
+2016-02-16 13:40:15.099 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/DKK], using default - 1
+2016-02-16 13:40:15.100 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/DKK], using default - 1
+2016-02-16 13:40:15.100 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/HKD], using default - 1
+2016-02-16 13:40:15.100 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/HKD], using default - 1
+2016-02-16 13:40:15.101 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/CAD], using default - 1
+2016-02-16 13:40:15.101 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/ZAR], using default - 1
+2016-02-16 13:40:15.101 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/ZAR], using default - 1
+2016-02-16 13:40:15.102 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/NOK], using default - 1
+2016-02-16 13:40:15.102 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/NOK], using default - 1
+2016-02-16 13:40:15.102 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/HKD], using default - 1
+2016-02-16 13:40:15.102 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/HKD], using default - 1
+2016-02-16 13:40:15.103 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/AUD], using default - 1
+2016-02-16 13:40:15.103 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/DKK], using default - 1
+2016-02-16 13:40:15.104 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/DKK], using default - 1
+2016-02-16 13:40:15.104 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/CAD], using default - 1
+2016-02-16 13:40:15.104 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/CAD], using default - 1
+2016-02-16 13:40:15.105 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [SGD/JPY], using default - 1
+2016-02-16 13:40:15.105 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [SGD/JPY], using default - 1
+2016-02-16 13:40:15.105 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CAD/CHF], using default - 1
+2016-02-16 13:40:15.106 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CAD/CHF], using default - 1
+2016-02-16 13:40:15.106 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/TRY], using default - 1
+2016-02-16 13:40:15.106 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/TRY], using default - 1
+2016-02-16 13:40:15.106 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/TRY], using default - 1
+2016-02-16 13:40:15.107 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/TRY], using default - 1
+2016-02-16 13:40:15.107 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/AUD], using default - 1
+2016-02-16 13:40:15.107 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/SGD], using default - 1
+2016-02-16 13:40:15.108 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/SGD], using default - 1
+2016-02-16 13:40:15.108 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/CHF], using default - 1
+2016-02-16 13:40:15.108 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/NZD], using default - 1
+2016-02-16 13:40:15.109 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/NZD], using default - 1
+2016-02-16 13:40:15.109 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUS.IDX/EUR], using default - 1
+2016-02-16 13:40:15.109 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/SGD], using default - 1
+2016-02-16 13:40:15.110 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/SGD], using default - 1
+2016-02-16 13:40:15.110 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [XAU/USD], using default - 1
+2016-02-16 13:40:15.111 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/CHF], using default - 1
+2016-02-16 13:40:15.111 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/USD], using default - 1
+2016-02-16 13:40:15.111 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [NZD/JPY], using default - 1
+2016-02-16 13:40:15.112 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/JPY], using default - 1
+2016-02-16 13:40:15.112 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/MXN], using default - 1
+2016-02-16 13:40:15.112 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/MXN], using default - 1
+2016-02-16 13:40:15.113 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/SGD], using default - 1
+2016-02-16 13:40:15.113 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/SGD], using default - 1
+2016-02-16 13:40:15.113 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/NZD], using default - 1
+2016-02-16 13:40:15.114 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/NZD], using default - 1
+2016-02-16 13:40:15.114 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CAD/HKD], using default - 1
+2016-02-16 13:40:15.114 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CAD/HKD], using default - 1
+2016-02-16 13:40:15.115 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/CHF], using default - 1
+2016-02-16 13:40:15.115 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/USD], using default - 1
+2016-02-16 13:40:15.115 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/PLN], using default - 1
+2016-02-16 13:40:15.116 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/PLN], using default - 1
+2016-02-16 13:40:15.117 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/JPY], using default - 1
+2016-02-16 13:40:15.117 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/NZD], using default - 1
+2016-02-16 13:40:15.118 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CHF/JPY], using default - 1
+2016-02-16 13:40:15.118 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CHF/JPY], using default - 1
+2016-02-16 13:40:15.119 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/USD], using default - 1
+2016-02-16 13:40:15.119 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [ESP.IDX/EUR], using default - 1
+2016-02-16 13:40:15.120 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/USD], using default - 1
+2016-02-16 13:40:15.120 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/JPY], using default - 1
+2016-02-16 13:40:15.120 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/PLN], using default - 1
+2016-02-16 13:40:15.121 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/PLN], using default - 1
+2016-02-16 13:40:15.121 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/CHF], using default - 1
+2016-02-16 13:40:15.121 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/CHF], using default - 1
+2016-02-16 13:40:15.122 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [XAG/USD], using default - 1
+2016-02-16 13:40:15.122 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/GBP], using default - 1
+2016-02-16 13:40:15.123 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/RUB], using default - 1
+2016-02-16 13:40:15.124 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [GBP/JPY], using default - 1
+2016-02-16 13:40:15.125 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [NZD/CHF], using default - 1
+2016-02-16 13:40:15.125 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [NZD/CHF], using default - 1
+2016-02-16 13:40:15.125 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/NOK], using default - 1
+2016-02-16 13:40:15.125 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/NOK], using default - 1
+2016-02-16 13:40:15.126 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CAD/JPY], using default - 1
+2016-02-16 13:40:15.126 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [CHF/SGD], using default - 1
+2016-02-16 13:40:15.127 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [CHF/SGD], using default - 1
+2016-02-16 13:40:15.127 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [LIGHT.CMD/USD], using default - 1
+2016-02-16 13:40:15.128 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUD/CAD], using default - 1
+2016-02-16 13:40:15.128 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [AUD/CAD], using default - 1
+2016-02-16 13:40:15.128 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [HKD/JPY], using default - 1
+2016-02-16 13:40:15.128 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [HKD/JPY], using default - 1
+2016-02-16 13:40:15.129 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [AUS.IDX/AUD], using default - 1
+2016-02-16 13:40:15.129 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [EUR/SEK], using default - 1
+2016-02-16 13:40:15.129 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [EUR/SEK], using default - 1
+2016-02-16 13:40:15.129 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/SEK], using default - 1
+2016-02-16 13:40:15.130 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/SEK], using default - 1
+2016-02-16 13:40:15.130 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown trade amount increment for the instrument [USD/CNH], using default - 1
+2016-02-16 13:40:15.130 WARN  com.dukascopy.api.instrument.InstrumentParser - Unknown minimal trade amount for the instrument [USD/CNH], using default - 1
+2016-02-16 13:40:15.133 INFO  com.dukascopy.api.impl.connect.AuthorizationClient - Selecting the best server...
+2016-02-16 13:40:16.292 WARN  com.dukascopy.charts.data.datacache.FeedDataProvider - JStore is disabled for the current user
+2016-02-16 13:40:16.971 INFO  com.dukascopy.dds4.transport.client.ClientProtocolHandler - TcpNoDelay=false
+2016-02-16 13:40:17.854 INFO  com.dukascopy.dds4.transport.client.ProtocolVersionClientNegotiatorFilter - Server: null responded with version: 4
+2016-02-16 13:40:17.857 INFO  com.dukascopy.dds4.transport.client.ClientConnector - Primary connect successfull, primarySession is [MinaIoSessionWrapper [session=(SOCKET, R: d-ja-gva-101-133-167.dukascopy.com/194.8.15.167:10443, L: /192.168.43.238:53551, S: d-ja-gva-101-133-167.dukascopy.com/194.8.15.167:10443)]], address is [d-ja-gva-101-133-167.dukascopy.com/194.8.15.167:10443]
+2016-02-16 13:40:18.278 INFO  com.dukascopy.dds2.greed.connection.GreedClientAuthorizationProvider - !!!:Thread[ClientConnector,5,main]
+2016-02-16 13:40:18.282 INFO  com.dukascopy.dds4.transport.client.ClientConnector - Child socket connection could be accepted now by server [<ChildSocketAuthAcceptorMessage(parentSessionId=0901f6e9-a6a5-4d2e-a67d-53f6903afb68,timestamp=1455626461698)>], transport client [null, d-ja-gva-101-133-167.dukascopy.com/194.8.15.167:10443]
+2016-02-16 13:40:18.677 WARN  com.dukascopy.api.impl.connect.WLabelData - White Label Image is not received
+2016-02-16 13:40:18.678 INFO  singlejartest.Main - Connected
+2016-02-16 13:40:18.679 INFO  singlejartest.Main - Subscribing instruments...
+2016-02-16 13:40:19.903 INFO  com.dukascopy.dds4.transport.client.ProtocolVersionClientNegotiatorFilter - Server: null responded with version: 4
+2016-02-16 13:40:19.904 INFO  com.dukascopy.dds4.transport.client.ClientConnector - Child session opened for [d-ja-gva-101-133-167.dukascopy.com/194.8.15.167:10443], sending [<ChildSocketAuthAcceptorMessage(parentSessionId=0901f6e9-a6a5-4d2e-a67d-53f6903afb68,timestamp=1455626461698)>], successful consequent attempt [1]
+2016-02-16 13:40:21.802 INFO  singlejartest.Main - Downloading data
+2016-02-16 13:40:21.818 INFO  singlejartest.Main - Starting strategy
+2016-02-16 13:40:22.030 INFO  singlejartest.Main - Strategy started: 1
+2016-02-16 13:40:22.031 INFO  singlejartest.Main - Getting prices before start time
+2016-02-16 13:40:22.345 INFO  singlejartest.Main - Creating data loading threads
+2016-02-16 13:40:22.462 INFO  singlejartest.Main - Getting prices before start time
+2016-02-16 13:40:22.543 WARN  com.dukascopy.api.impl.connect.WLabelData - White Label Image is not received
+2016-02-16 13:40:22.564 INFO  singlejartest.Main - Filling in-progress candles
+2016-02-16 13:40:24.699 INFO  singlejartest.Main - Executing onStart
+2016-02-16 13:40:26.777 INFO  singlejartest.Main - Running
+2016-02-16 13:40:27.431 INFO  singlejartest.Main - Running, Sat 2016.02.13 00:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.455 INFO  singlejartest.Main - Running, Sat 2016.02.13 01:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.478 INFO  singlejartest.Main - Running, Sat 2016.02.13 01:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.495 INFO  singlejartest.Main - Running, Sat 2016.02.13 02:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.511 INFO  singlejartest.Main - Running, Sat 2016.02.13 02:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.523 INFO  singlejartest.Main - Running, Sat 2016.02.13 03:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.535 INFO  singlejartest.Main - Running, Sat 2016.02.13 03:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.548 INFO  singlejartest.Main - Running, Sat 2016.02.13 04:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.559 INFO  singlejartest.Main - Running, Sat 2016.02.13 04:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.573 INFO  singlejartest.Main - Running, Sat 2016.02.13 05:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.588 INFO  singlejartest.Main - Running, Sat 2016.02.13 05:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.602 INFO  singlejartest.Main - Running, Sat 2016.02.13 06:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.611 INFO  singlejartest.Main - Running, Sat 2016.02.13 06:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.618 INFO  singlejartest.Main - Running, Sat 2016.02.13 07:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.625 INFO  singlejartest.Main - Running, Sat 2016.02.13 07:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.635 INFO  singlejartest.Main - Running, Sat 2016.02.13 08:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.643 INFO  singlejartest.Main - Running, Sat 2016.02.13 08:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.655 INFO  singlejartest.Main - Running, Sat 2016.02.13 09:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.664 INFO  singlejartest.Main - Running, Sat 2016.02.13 09:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.674 INFO  singlejartest.Main - Running, Sat 2016.02.13 10:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.683 INFO  singlejartest.Main - Running, Sat 2016.02.13 10:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.690 INFO  singlejartest.Main - Running, Sat 2016.02.13 11:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.696 INFO  singlejartest.Main - Running, Sat 2016.02.13 11:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.704 INFO  singlejartest.Main - Running, Sat 2016.02.13 12:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.713 INFO  singlejartest.Main - Running, Sat 2016.02.13 12:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.719 INFO  singlejartest.Main - Running, Sat 2016.02.13 13:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.727 INFO  singlejartest.Main - Running, Sat 2016.02.13 13:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.732 INFO  singlejartest.Main - Running, Sat 2016.02.13 14:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.740 INFO  singlejartest.Main - Running, Sat 2016.02.13 14:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.748 INFO  singlejartest.Main - Running, Sat 2016.02.13 15:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.756 INFO  singlejartest.Main - Running, Sat 2016.02.13 15:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.764 INFO  singlejartest.Main - Running, Sat 2016.02.13 16:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.771 INFO  singlejartest.Main - Running, Sat 2016.02.13 16:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.779 INFO  singlejartest.Main - Running, Sat 2016.02.13 17:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.787 INFO  singlejartest.Main - Running, Sat 2016.02.13 17:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.795 INFO  singlejartest.Main - Running, Sat 2016.02.13 18:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.801 INFO  singlejartest.Main - Running, Sat 2016.02.13 18:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.806 INFO  singlejartest.Main - Running, Sat 2016.02.13 19:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.810 INFO  singlejartest.Main - Running, Sat 2016.02.13 19:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.815 INFO  singlejartest.Main - Running, Sat 2016.02.13 20:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.819 INFO  singlejartest.Main - Running, Sat 2016.02.13 20:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.823 INFO  singlejartest.Main - Running, Sat 2016.02.13 21:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.827 INFO  singlejartest.Main - Running, Sat 2016.02.13 21:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.831 INFO  singlejartest.Main - Running, Sat 2016.02.13 22:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.835 INFO  singlejartest.Main - Running, Sat 2016.02.13 22:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.840 INFO  singlejartest.Main - Running, Sun 2016.02.13 23:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.847 INFO  singlejartest.Main - Running, Sun 2016.02.13 23:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.852 INFO  singlejartest.Main - Running, Sun 2016.02.14 00:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.858 INFO  singlejartest.Main - Running, Sun 2016.02.14 00:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.862 INFO  singlejartest.Main - Running, Sun 2016.02.14 01:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.868 INFO  singlejartest.Main - Running, Sun 2016.02.14 01:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.872 INFO  singlejartest.Main - Running, Sun 2016.02.14 02:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.879 INFO  singlejartest.Main - Running, Sun 2016.02.14 02:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.886 INFO  singlejartest.Main - Running, Sun 2016.02.14 03:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.892 INFO  singlejartest.Main - Running, Sun 2016.02.14 03:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.896 INFO  singlejartest.Main - Running, Sun 2016.02.14 04:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.901 INFO  singlejartest.Main - Running, Sun 2016.02.14 04:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.904 INFO  singlejartest.Main - Running, Sun 2016.02.14 05:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.909 INFO  singlejartest.Main - Running, Sun 2016.02.14 05:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.913 INFO  singlejartest.Main - Running, Sun 2016.02.14 06:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.918 INFO  singlejartest.Main - Running, Sun 2016.02.14 06:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.924 INFO  singlejartest.Main - Running, Sun 2016.02.14 07:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.930 INFO  singlejartest.Main - Running, Sun 2016.02.14 07:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.935 INFO  singlejartest.Main - Running, Sun 2016.02.14 08:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.940 INFO  singlejartest.Main - Running, Sun 2016.02.14 08:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.945 INFO  singlejartest.Main - Running, Sun 2016.02.14 09:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.950 INFO  singlejartest.Main - Running, Sun 2016.02.14 09:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.956 INFO  singlejartest.Main - Running, Sun 2016.02.14 10:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.960 INFO  singlejartest.Main - Running, Sun 2016.02.14 10:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.963 INFO  singlejartest.Main - Running, Sun 2016.02.14 11:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.970 INFO  singlejartest.Main - Running, Sun 2016.02.14 11:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.975 INFO  singlejartest.Main - Running, Sun 2016.02.14 12:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.979 INFO  singlejartest.Main - Running, Sun 2016.02.14 12:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.983 INFO  singlejartest.Main - Running, Sun 2016.02.14 13:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.986 INFO  singlejartest.Main - Running, Sun 2016.02.14 13:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.990 INFO  singlejartest.Main - Running, Sun 2016.02.14 14:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.994 INFO  singlejartest.Main - Running, Sun 2016.02.14 14:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:27.997 INFO  singlejartest.Main - Running, Sun 2016.02.14 15:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.001 INFO  singlejartest.Main - Running, Sun 2016.02.14 15:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.004 INFO  singlejartest.Main - Running, Sun 2016.02.14 16:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.007 INFO  singlejartest.Main - Running, Sun 2016.02.14 16:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.010 INFO  singlejartest.Main - Running, Sun 2016.02.14 17:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.013 INFO  singlejartest.Main - Running, Sun 2016.02.14 17:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.017 INFO  singlejartest.Main - Running, Sun 2016.02.14 18:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.021 INFO  singlejartest.Main - Running, Sun 2016.02.14 18:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.024 INFO  singlejartest.Main - Running, Sun 2016.02.14 19:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.028 INFO  singlejartest.Main - Running, Sun 2016.02.14 19:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.033 INFO  singlejartest.Main - Running, Sun 2016.02.14 20:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.039 INFO  singlejartest.Main - Running, Sun 2016.02.14 20:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.044 INFO  singlejartest.Main - Running, Sun 2016.02.14 21:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.049 INFO  singlejartest.Main - Running, Sun 2016.02.14 21:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.057 INFO  singlejartest.Main - Running, Sun 2016.02.14 22:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.150 INFO  singlejartest.Main - Running, Sun 2016.02.14 22:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.269 INFO  singlejartest.Main - Running, Mon 2016.02.14 23:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.454 INFO  singlejartest.Main - Running, Mon 2016.02.14 23:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.531 INFO  singlejartest.Main - Running, Mon 2016.02.15 00:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.700 INFO  singlejartest.Main - Running, Mon 2016.02.15 00:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.812 INFO  singlejartest.Main - Running, Mon 2016.02.15 01:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:28.941 INFO  singlejartest.Main - Running, Mon 2016.02.15 01:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.036 INFO  singlejartest.Main - Running, Mon 2016.02.15 02:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.143 INFO  singlejartest.Main - Running, Mon 2016.02.15 02:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.225 INFO  singlejartest.Main - Running, Mon 2016.02.15 03:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.282 INFO  singlejartest.Main - Running, Mon 2016.02.15 03:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.363 INFO  singlejartest.Main - Running, Mon 2016.02.15 04:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.466 INFO  singlejartest.Main - Running, Mon 2016.02.15 04:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.528 INFO  singlejartest.Main - Running, Mon 2016.02.15 05:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.615 INFO  singlejartest.Main - Running, Mon 2016.02.15 05:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.669 INFO  singlejartest.Main - Running, Mon 2016.02.15 06:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.768 INFO  singlejartest.Main - Running, Mon 2016.02.15 06:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.823 INFO  singlejartest.Main - Running, Mon 2016.02.15 07:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:29.963 INFO  singlejartest.Main - Running, Mon 2016.02.15 07:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.032 INFO  singlejartest.Main - Running, Mon 2016.02.15 08:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.138 INFO  singlejartest.Main - Running, Mon 2016.02.15 08:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.218 INFO  singlejartest.Main - Running, Mon 2016.02.15 09:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.307 INFO  singlejartest.Main - Running, Mon 2016.02.15 09:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.367 INFO  singlejartest.Main - Running, Mon 2016.02.15 10:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.451 INFO  singlejartest.Main - Running, Mon 2016.02.15 10:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.501 INFO  singlejartest.Main - Running, Mon 2016.02.15 11:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.572 INFO  singlejartest.Main - Running, Mon 2016.02.15 11:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.617 INFO  singlejartest.Main - Running, Mon 2016.02.15 12:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.677 INFO  singlejartest.Main - Running, Mon 2016.02.15 12:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.721 INFO  singlejartest.Main - Running, Mon 2016.02.15 13:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.809 INFO  singlejartest.Main - Running, Mon 2016.02.15 13:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.867 INFO  singlejartest.Main - Running, Mon 2016.02.15 14:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:30.996 INFO  singlejartest.Main - Running, Mon 2016.02.15 14:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.086 INFO  singlejartest.Main - Running, Mon 2016.02.15 15:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.215 INFO  singlejartest.Main - Running, Mon 2016.02.15 15:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.281 INFO  singlejartest.Main - Running, Mon 2016.02.15 16:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.342 INFO  singlejartest.Main - Running, Mon 2016.02.15 16:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.382 INFO  singlejartest.Main - Running, Mon 2016.02.15 17:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.428 INFO  singlejartest.Main - Running, Mon 2016.02.15 17:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.461 INFO  singlejartest.Main - Running, Mon 2016.02.15 18:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.503 INFO  singlejartest.Main - Running, Mon 2016.02.15 18:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.528 INFO  singlejartest.Main - Running, Mon 2016.02.15 19:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.571 INFO  singlejartest.Main - Running, Mon 2016.02.15 19:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.603 INFO  singlejartest.Main - Running, Mon 2016.02.15 20:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.644 INFO  singlejartest.Main - Running, Mon 2016.02.15 20:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.674 INFO  singlejartest.Main - Running, Mon 2016.02.15 21:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.702 INFO  singlejartest.Main - Running, Mon 2016.02.15 21:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.728 INFO  singlejartest.Main - Running, Mon 2016.02.15 22:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.739 INFO  singlejartest.Main - Running, Mon 2016.02.15 22:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.777 INFO  singlejartest.Main - Running, Tue 2016.02.15 23:00 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.811 INFO  singlejartest.Main - Running, Tue 2016.02.15 23:30 Eq: 50,000.00 UoL: .00%
+2016-02-16 13:40:31.835 INFO  singlejartest.Main - Executing onStop
+2016-02-16 13:40:31.851 INFO  singlejartest.Main - Strategy stopped: 1
+2016-02-16 13:40:31.852 ERROR singlejartest.Main - C:\report.html (Accès refusé)
+java.io.FileNotFoundException: C:\report.html (Accès refusé)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.createReport(TesterClientImpl.java:1586)
+	at singlejartest.TesterMain$1.onStop(TesterMain.java:80)
+	at com.dukascopy.api.impl.connect.TesterClientImpl$4.onStop(TesterClientImpl.java:636)
+	at com.dukascopy.api.impl.connect.TesterClientImpl$TesterLoadingProgressListener.loadingFinished(TesterClientImpl.java:1824)
+	at com.dukascopy.dds2.greed.agent.strategy.tester.StrategyRunner.run(StrategyRunner.java:487)
+	at java.lang.Thread.run(Thread.java:745)
