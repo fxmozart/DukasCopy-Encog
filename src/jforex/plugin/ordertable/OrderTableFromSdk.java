@@ -23,9 +23,9 @@ public class OrderTableFromSdk {
     //url of the DEMO jnlp
     private static String jnlpUrl = "http://platform.dukascopy.com/demo/jforex.jnlp";
     //user name
-    private static String userName = "DEMO2MReFH";
+    private static String userName = "username";
     //password
-    private static String password = "MReFH";
+    private static String password = "password";
 	
     private static JFrame frame;
     private static UUID pluginId =null;

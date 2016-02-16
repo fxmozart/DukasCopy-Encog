@@ -315,12 +315,11 @@ public class StratTablePlugin extends Plugin {
 		
 		public void run() {
 			try {
-			/*	IStrategyResponse<UUID> startResponse = strategyManager.startStrategy(file, params).get();
+				IStrategyResponse<UUID> startResponse = strategyManager.startStrategy(file, params).get();
 				if(startResponse.isError()){
 					console.getErr().println(file.getName() + " strategy start failed: " + startResponse.getErrorMessage());
 					return;
-				}
-*/
+				}		
 			} catch (Exception e1) {
 				console.getErr().println(e1);
 				e1.printStackTrace(console.getErr());

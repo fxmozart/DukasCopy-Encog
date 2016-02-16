@@ -15,12 +15,6 @@
  * be used to endorse or promote products derived from this software without
  * specific prior written permission.
  *
-
-
-Compte	 	0079632.0001USD
-Login	 	Zebrowski357
-Mot de passe	 	9c2c2734
-
  * This software is provided "AS IS," without a warranty of any kind. ALL
  * EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING
  * ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
@@ -42,7 +36,6 @@ import com.dukascopy.api.system.ITesterClient;
 import com.dukascopy.api.system.TesterFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.dukascopy.api.LoadingProgressListener;
 
 import java.io.File;
 import java.util.HashSet;
@@ -58,9 +51,9 @@ public class TesterMain {
     //url of the DEMO jnlp
     private static String jnlpUrl = "http://platform.dukascopy.com/demo/jforex.jnlp";
     //user name
-    private static String userName = "DEMO2MReFH";
+    private static String userName = "username";
     //password
-    private static String password = "MReFH";
+    private static String password = "password";
 
     public static void main(String[] args) throws Exception {
         //get the instance of the IClient interface
