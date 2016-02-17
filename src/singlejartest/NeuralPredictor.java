@@ -7,6 +7,7 @@ import com.dukascopy.api.IContext;
 import com.dukascopy.api.IEngine;
 import com.dukascopy.api.IHistory;
 import com.dukascopy.api.IIndicators;
+import com.dukascopy.api.IIndicators.AppliedPrice;
 import com.dukascopy.api.IIndicators.MaType;
 import com.dukascopy.api.IMessage;
 import com.dukascopy.api.IOrder;
@@ -22,11 +23,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
-
-
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
@@ -167,10 +167,7 @@ public class NeuralPredictor  implements IStrategy {
      */
     public double[][] FullData  = new double[4][1500];
     
-        /**
-         * 
-         */
-        public final static int STARTING_YEAR = 100;
+ 
         /**
          * 
          */
@@ -182,11 +179,7 @@ public class NeuralPredictor  implements IStrategy {
         /**
          * 
          */
-        public final static int EVALUATE_START = 1100;
-        /**
-         * 
-         */
-        public int EVALUATE_END = 1200;
+
 	
 	/**
 	 * This really should be lowered, I am setting it to a level here that will
@@ -308,15 +301,11 @@ public class NeuralPredictor  implements IStrategy {
 			double closedLoopPrediction = output.getData(0);
 			double denormed = norm.getStats().deNormalize(prediction);
                         
-			String t;
-			if( year< EVALUATE_START ) {
-				t = "Train:";
-			} else {
-				t = "Evalu:";
-			}
+			 
+			 
 			
 			// display
-			System.out.println( t + (STARTING_YEAR+year)
+			System.out.println( (year)
 					+"\t"+f.format(this.normalizedSunspots[year])
 					+"\t"+"\t"+f.format(prediction)
 					+"\t"+f.format(closedLoopPrediction)
@@ -377,11 +366,23 @@ public class NeuralPredictor  implements IStrategy {
          //Lets copy the closing values to sunspots
          SUNSPOTS = GetWorkableArray(FullData,3);
          
-         EVALUATE_END = SUNSPOTS.length -1;
+       
          //Now lets get to do some neural work....
           run();
          
     }
+    
+ public List<Double> getIndicatorByShift(int shift, String indicator,Period period,Instrument instrument) throws JFException
+ {
+     List<Double> bars =new ArrayList<>();
+     Object[] minMaxUni = indicators.calculateIndicator(instrument, period, new OfferSide[] { OfferSide.ASK }, "MINMAX",
+    new AppliedPrice[] { IIndicators.AppliedPrice.CLOSE }, new Object[] { 5 }, shift);
+     
+     
+     
+     
+     return bars;
+ }
  public List<IBar> GetBars() throws java.text.ParseException, JFException
  {
      SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyy HH:mm:ss");
